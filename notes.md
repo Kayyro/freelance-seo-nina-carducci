@@ -32,3 +32,6 @@ Ajouter la sémantique HTML : <header>, <main>, <nav>, <footer>, <section>
 Lier les <label> aux inputs avec for="id"
 Corriger les contrastes de couleurs insuffisants
 Ajouter un <main> landmark
+
+
+![alt text](image.png) resultat du lighouse a la base (je vise les 95)
