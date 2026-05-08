@@ -30,3 +30,5 @@ Ce document répertorie l'ensemble des optimisations et corrections apportées a
 - [ ] **[En cours]** Restructuration sémantique : utilisation des balises `<header>`, `<main>`, `<nav>`, et `<section>`.
 - [ ] Correction des contrastes de couleurs pour respecter les normes WCAG.
 - [ ] Ajout d'un landmark `<main>` pour faciliter la navigation par lecteur d'écran.
+
+![depart](image.png)
