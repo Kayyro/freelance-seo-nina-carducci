@@ -11,7 +11,14 @@ Ce document répertorie l'ensemble des optimisations et corrections apportées a
 - [x] Optimisation du `<head>` : déplacement de la balise `<meta charset>` en première position.
 - [x] Ajout d'un `<title>` unique et pertinent.
 - [x] Ajout d'une balise `<meta name="description">`.
-- [ ] **[En cours]** Correction de la hiérarchie des titres (`h1` à `h6`).
+- [x] Correction de la hiérarchie des titres (`h1` à `h6`).
+    h1 → Nina Carducci
+        h2 → A propos de moi
+        h2 → Portfolio
+        h2 → Mes services
+            h3 → Shooting photo
+            h3 → Retouches
+            h3 → Album photos
 - [ ] Mise en place des balises **OpenGraph** (pour le partage Facebook/LinkedIn).
 - [ ] Configuration des **Twitter Cards**.
 - [ ] Implémentation des données structurées **Schema.org** (SEO local).
