@@ -66,3 +66,30 @@ soit un gain de plus de 98%.
 - Liaison des `<label>` aux `<input>` via l'attribut `for`
 - Ajout d'un `aria-label` sur le lien Instagram
 - Correction des contrastes de couleurs
+
+## III - Accessibilité du site
+
+### Avant optimisation
+- Score Lighthouse accessibilité : 73
+- Nombreuses erreurs WAVE détectées
+
+[![Capture Avant](WaveAvant.png)]
+
+### Après optimisation
+- Score Lighthouse accessibilité : 100
+- 0 erreur WAVE détectée
+- AIM Score : 10/10
+
+[![Capture Aprés](WaveApres.png)]
+
+### Modifications effectuées
+
+- Ajout des attributs `alt` sur toutes les images du site
+- Liaison des `<label>` aux `<input>` du formulaire via `for="id"`
+- Ajout d'un `aria-label` sur le lien Instagram (lien sans texte visible)
+- Correction de la hiérarchie des titres pour une navigation 
+  logique au lecteur d'écran
+- Ajout des balises sémantiques `<header>`, `<main>`, `<nav>`, 
+  `<section>` pour faciliter la navigation assistée
+- Ajout de `lang="fr"` sur `<html>` pour une lecture correcte 
+  par les lecteurs d'écran
