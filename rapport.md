@@ -128,3 +128,10 @@ optimisé lors du partage du site sur Twitter/X :
 - Type de carte : summary_large_image
 - Titre, description et image de prévisualisation
 
+
+## V - Cahier de recette
+
+| ID | Action | Résultat initial | Résultat attendu | Statut | Remarques |
+|----|--------|-----------------|------------------|--------|-----------|
+| 1 | Cliquer sur un filtre de la galerie | Le filtre sélectionné ne change pas de couleur | Le filtre sélectionné affiche un fond doré | ✅ Résolu | Ajout de la classe `active` dans `filterByTag()` dans `maugallery.js` |
+| 2 | Cliquer sur les flèches prev/next dans la modale | La même image reste affichée | L'image précédente ou suivante s'affiche | ✅ Résolu | Correction des index `i-1` et `i+1` dans `prevImage()` et `nextImage()` dans `maugallery.js` |
