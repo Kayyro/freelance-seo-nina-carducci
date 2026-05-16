@@ -93,3 +93,38 @@ soit un gain de plus de 98%.
   `<section>` pour faciliter la navigation assistée
 - Ajout de `lang="fr"` sur `<html>` pour une lecture correcte 
   par les lecteurs d'écran
+
+## IV - Détails de réalisations additionnelles à la demande du client
+
+### 1 - Référencement local avec Schema.org
+
+Mise en place des données structurées Schema.org de type 
+`LocalBusiness` permettant à Google d'afficher les informations 
+de Nina Carducci directement dans les résultats de recherche 
+(Rich Snippet) :
+
+- Nom : Nina Carducci
+- Adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux
+- Téléphone : 05 56 67 78 89
+- Horaires : Lundi au vendredi de 10h à 19h
+
+[Capture du test Google Rich Snippet]
+
+### 2 - Balises OpenGraph
+
+Mise en place des balises OpenGraph permettant un affichage 
+optimisé lors du partage du site sur Facebook et LinkedIn :
+
+- Titre de la page
+- Description
+- Image de prévisualisation
+- URL canonique
+
+### 3 - Twitter Cards
+
+Mise en place des Twitter Cards permettant un affichage 
+optimisé lors du partage du site sur Twitter/X :
+
+- Type de carte : summary_large_image
+- Titre, description et image de prévisualisation
+
