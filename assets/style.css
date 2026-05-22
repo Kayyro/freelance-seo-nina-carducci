@@ -351,3 +351,14 @@ input[type="submit"] {
 	}
 }
 
+/* Correction de l'aspect ratio pour le slider Bootstrap */
+.carousel-inner .carousel-item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+}
+/* Correction de l'aspect ratio spécifiquement pour la photo de Nina */
+.picture.left img {
+    width: 100% !important;
+    height: auto !important;
+}
