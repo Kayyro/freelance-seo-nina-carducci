@@ -15,8 +15,8 @@
 ### Après optimisation
 | Axe | Score |
 |-----|-------|
-| Performance | 95 |
-| Accessibilité | 92 |
+| Performance | 98 |
+| Accessibilité | 100 |
 | Best Practices | 100 |
 | SEO | 100 |
 
@@ -26,26 +26,22 @@
 
 ### 1 - Les images
 
-Le projet comportait originellement 14 images pour un poids total 
-d'environ 30 000 Ko (30 Mo). Nous avons effectué les modifications 
-suivantes :
+Le projet comportait originellement 14 images pour un poids total d'environ 30 000 Ko (30 Mo). Nous avons effectué les modifications suivantes :
 
 - Conversion de toutes les images au format WebP
 - Redimensionnement des images à leur taille d'affichage réelle
 - Ajout de l'attribut loading="lazy" sur les images hors écran
 
-Après modifications, le poids total des images est d'environ 580 Ko,
-soit un gain de plus de 98%.
+Après modifications, le poids total des images est d'environ 580 Ko, soit un gain de plus de 98%.
 
 ### 2 - Les scripts
 
-- Ajout de l'attribut `defer` sur tous les scripts pour supprimer
-  le blocage du rendu de la page
+- Ajout de l'attribut `defer` sur tous les scripts pour supprimer le blocage du rendu de la page
+- Utilisation de la version minifiée du script de la galerie (`maugallery.min.js`)
 
 ### 3 - Sémantique HTML
 
-- Remplacement des `<div>` génériques par des balises sémantiques :
-  `<header>`, `<main>`, `<nav>`, `<section>`
+- Remplacement des `<div>` génériques par des balises sémantiques : `<header>`, `<main>`, `<nav>`, `<section>`
 - Correction de la hiérarchie des titres (h1 → h2 → h3)
 - Remplacement des `<h1>` sur les citations par des `<p>`
 - Remplacement du `<h6>` introduction par un `<p>`
@@ -67,10 +63,12 @@ soit un gain de plus de 98%.
 - Ajout d'un `aria-label` sur le lien Instagram
 - Correction des contrastes de couleurs
 
+---
+
 ## III - Accessibilité du site
 
 ### Avant optimisation
-- Score Lighthouse accessibilité : 73
+- Score Lighthouse accessibilité : 67
 - Nombreuses erreurs WAVE détectées
 
 [![Capture Avant](WaveAvant.png)]
@@ -80,40 +78,35 @@ soit un gain de plus de 98%.
 - 0 erreur WAVE détectée
 - AIM Score : 10/10
 
-[![Capture Aprés](WaveApres.png)]
+[![Capture Après](WaveApres.png)]
 
 ### Modifications effectuées
 
 - Ajout des attributs `alt` sur toutes les images du site
 - Liaison des `<label>` aux `<input>` du formulaire via `for="id"`
 - Ajout d'un `aria-label` sur le lien Instagram (lien sans texte visible)
-- Correction de la hiérarchie des titres pour une navigation 
-  logique au lecteur d'écran
-- Ajout des balises sémantiques `<header>`, `<main>`, `<nav>`, 
-  `<section>` pour faciliter la navigation assistée
-- Ajout de `lang="fr"` sur `<html>` pour une lecture correcte 
-  par les lecteurs d'écran
+- Correction de la hiérarchie des titres pour une navigation logique au lecteur d'écran
+- Ajout des balises sémantiques `<header>`, `<main>`, `<nav>`, `<section>` pour faciliter la navigation assistée
+- Ajout de `lang="fr"` sur `<html>` pour une lecture correcte par les lecteurs d'écran
+
+---
 
 ## IV - Détails de réalisations additionnelles à la demande du client
 
 ### 1 - Référencement local avec Schema.org
 
-Mise en place des données structurées Schema.org de type 
-`LocalBusiness` permettant à Google d'afficher les informations 
-de Nina Carducci directement dans les résultats de recherche 
-(Rich Snippet) :
+Mise en place des données structurées Schema.org de type `LocalBusiness` permettant à Google d'afficher les informations de Nina Carducci directement dans les résultats de recherche (Rich Snippet) :
 
 - Nom : Nina Carducci
 - Adresse : 68 avenue Alsace-Lorraine, 33200 Bordeaux
 - Téléphone : 05 56 67 78 89
 - Horaires : Lundi au vendredi de 10h à 19h
 
-[Capture du test Google Rich Snippet]
+[![Test Google Rich Snippet](GoogleSnippet.png)]
 
 ### 2 - Balises OpenGraph
 
-Mise en place des balises OpenGraph permettant un affichage 
-optimisé lors du partage du site sur Facebook et LinkedIn :
+Mise en place des balises OpenGraph permettant un affichage optimisé lors du partage du site sur Facebook et LinkedIn :
 
 - Titre de la page
 - Description
@@ -122,16 +115,16 @@ optimisé lors du partage du site sur Facebook et LinkedIn :
 
 ### 3 - Twitter Cards
 
-Mise en place des Twitter Cards permettant un affichage 
-optimisé lors du partage du site sur Twitter/X :
+Mise en place des Twitter Cards permettant un affichage optimisé lors du partage du site sur Twitter/X :
 
 - Type de carte : summary_large_image
 - Titre, description et image de prévisualisation
 
+---
 
 ## V - Cahier de recette
 
 | ID | Action | Résultat initial | Résultat attendu | Statut | Remarques |
 |----|--------|-----------------|------------------|--------|-----------|
 | 1 | Cliquer sur un filtre de la galerie | Le filtre sélectionné ne change pas de couleur | Le filtre sélectionné affiche un fond doré | ✅ Résolu | Ajout de la classe `active` dans `filterByTag()` dans `maugallery.js` |
-| 2 | Cliquer sur les flèches prev/next dans la modale | La même image reste affichée | L'image précédente ou suivante s'affiche | ✅ Résolu | Correction des index `i-1` et `i+1` dans `prevImage()` et `nextImage()` dans `maugallery.js` |
+| 2 | Cliquer sur les flèches prev/next dans la modale | La même image reste affichée | L'image précédente ou suivante s'affiche | ✅ Résolu | Correction des index `i-1` et `i+1` dans `prevImage()` and `nextImage()` dans `maugallery.js` |
